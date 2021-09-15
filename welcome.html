@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WelcomePage</title>
+    <link rel="stylesheet" href="./css/welcome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+   <nav class="nav-links">
+      <h1 id="h1">Hii ${} </h1>
+      <div class="edit-profile">
+          <div class="round"><img src="/img/unf.jpg" alt="profile"></div>
+          <button class="btn-profile">view profile ></i></button>
+          <!-- <i class="fa fa-gear"></i> -->
+      </div>
+   </nav>
+
+   <main>
+       <!-- <h2 id="ac-no">Your Account Number:</h2> -->
+       <h2 id="s-center"><u> select the service</u></h2>
+       <div class="buttons">
+        <div class="first-button">
+            <button class="btn" onclick="Buttonmform1()">Deposit Money</button>
+            <div class="mform1">
+                <div class="icon">
+                    <i class="fa fa-times-circle-o icon-pressed1"  style="font-size:24px"></i>
+                </div>
+                <form action="" class="mini-form-link ">
+                    <input type="number" name="Damount" placeholder="Enter the amount" required>
+                    <input type="submit" value="Deposit">
+                </form>
+            </div>
+        </div>
+        <div class="second-button">
+            <button class="btn" onclick="Buttonmform2()">Withdraw Money</button>
+            <div class=" mform2">
+                <div class="icon">
+                    <i class="fa fa-times-circle-o icon-pressed2" style="font-size:24px"></i>
+                </div>
+                <form action="" class="mini-form-link ">
+                    <input type="number" name="Wamount" placeholder="Enter the amount" required>
+                    <input type="submit" value="Withdraw">
+                </form>
+            </div>
+        </div>
+        <div class="third-button">
+            <button class="btn" onclick="Buttonmform3()">Money Transfer</button>
+            <div class="mform3">
+                <div class="icon special-icon">
+                    <i class="fa fa-times-circle-o icon-pressed3" style="font-size:24px"></i>
+                </div>
+                <form action="" class="mini-form-link last-mini-form">
+                    <input type="number" name="BaccNO" placeholder="Enter Beneficiary Account Number" required>
+                    <input type="text" name="Bemail" placeholder="Enter Beneficiary Email">
+                    <input type="submit" value="Send Amount">
+                </form>
+            </div>
+        </div>
+        
+       </div>
+   </main>
+</div>
+
+<script src="./js/welcome.js"></script>
+</body>
+</html>
